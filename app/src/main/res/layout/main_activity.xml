@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+    <!-- 标题 -->
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/title_App_name"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="5dip"
+            android:text="Android一点通"
+            android:textColor="#ffffffff"
+            android:textSize="22.0sp" />
+    </RelativeLayout>
+
+    <!-- 第一排图标 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_marginTop="10sp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/activity"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_weight="1"
+            android:src="@drawable/icon_fruit6" />
+
+        <ImageView
+            android:id="@+id/serv"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_weight="1"
+            android:src="@drawable/icon_fruit7" />
+
+        <ImageView
+            android:id="@+id/broadcast"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_weight="1"
+            android:src="@drawable/icon_fruit8" />
+
+        <ImageView
+            android:id="@+id/content"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_weight="1"
+            android:src="@drawable/icon_fruit9" />
+    </LinearLayout>
+    <!-- 第一排文字 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Activity"
+            android:textColor="@android:color/black"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Service"
+            android:textColor="@android:color/black"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Broadcast"
+            android:textColor="@android:color/black"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Content"
+            android:textColor="@android:color/black"
+            android:textSize="12dp" />
+    </LinearLayout>
+    <!-- 第二排图标 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_marginTop="10sp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/Intent"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_weight="1"
+            android:src="@drawable/icon_fruit6" />
+
+        <ImageView
+            android:id="@+id/ListView"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_weight="1"
+            android:src="@drawable/icon_fruit7" />
+
+        <ImageView
+            android:id="@+id/ViewPager"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_weight="1"
+            android:src="@drawable/icon_fruit8" />
+
+        <ImageView
+            android:id="@+id/Adapter"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_weight="1"
+            android:src="@drawable/icon_fruit9" />
+    </LinearLayout>
+    <!-- 第二排文字 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Intent"
+            android:textColor="@android:color/black"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="ListView"
+            android:textColor="@android:color/black"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="ViewPager"
+            android:textColor="@android:color/black"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Adapter"
+            android:textColor="@android:color/black"
+            android:textSize="12dp" />
+    </LinearLayout>
+    <!-- 轮播广告 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:background="#6000"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tv_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff" />
+
+                <LinearLayout
+                    android:id="@+id/ll_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"></LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!-- 最新文章 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最新文章"
+                android:textColor="@android:color/black"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/icon_remen" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:background="@android:color/darker_gray" />
+    </LinearLayout>
+
+
+
+
+        <!-- 第一篇文章 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/icon_fruit10" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_marginLeft="12dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/new1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Android的Drawable分类和使用详解"
+                    android:textColor="@android:color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Drawable还是有很多其他实现方式的。今天就详细讲解一下Drawable。"
+                    android:textColor="@android:color/black"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray" />
+        <!-- 第二篇文章 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/icon_fruit11" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/new2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Android 服务使用概述"
+                    android:textColor="@android:color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="本文将探索并回忆服务相关的一些使用技巧。"
+                    android:textColor="@android:color/black"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray" />
+
+
+        <!-- 第三篇文章 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/icon_fruit12" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/new3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RecycleView使用详解"
+                    android:textColor="@android:color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RecycleView是一个类似 ListView GridView的控件。"
+                    android:textColor="@android:color/black"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="©copyright pkufenghao.top"
+        android:textColor="@android:color/black"
+        android:textSize="10dp" />
+</LinearLayout>
